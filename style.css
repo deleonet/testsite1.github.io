@@ -1,0 +1,46 @@
+/* Estilos Globales */
+:root {
+    --primary-bg: #0d1117;
+    --secondary-bg: #161b22;
+    --accent: #58a6ff;
+    --text: #c9d1d9;
+    --border: #30363d;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+/* Estilo de Seguridad/Terminal */
+.terminal-box {
+    background: #000;
+    color: #00ff00;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: monospace;
+    border: 1px solid var(--border);
+}
+
+/* Grid de Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.skill-card {
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: var(--accent);
+    transform: scale(1.02);
+}
