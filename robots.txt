@@ -1,0 +1,11 @@
+# Permitir que todos los buscadores vean el sitio
+User-agent: *
+Allow: /
+
+# Bloquear acceso a carpetas de administración o archivos sensibles
+Disallow: /admin/
+Disallow: /config/
+Disallow: /private/
+
+# Ruta al sitemap
+Sitemap: https://tu-dominio.com/sitemap.xml
